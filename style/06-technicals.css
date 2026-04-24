@@ -1,7 +1,7 @@
 /* Сравнение спецификаций */
 #technicals {
   position: relative;
-  background: url(/images/hero-banner-2.jpg);
+  background: url(../images/hero-banner-2.jpg);
   background-size: cover;
   /* Убираем opacity: 0.3; - он не нужен */
 }
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.6); /* Затемнение фона на 30% */
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 1;
 }
 
