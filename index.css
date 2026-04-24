@@ -1,0 +1,120 @@
+@import url("./style/01-header.css");
+@import url("./style/02-buttons.css");
+@import url("./style/03-hero.css");
+@import url("./style/04-features.css");
+@import url("./style/05-specifications.css");
+@import url("./style/06-technicals.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #2d6c6b #367b7a #892e06 #e89344 #cf5603  */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #1e2a3e;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Типографика */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-subhead {
+  font-size: 1.125rem;
+  color: #4a5b6e;
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+/* Примеры сценариев */
+.cases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 24px;
+}
+.case-item {
+  flex: 1 1 240px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid #eef2f8;
+}
+.case-item i {
+  font-size: 2.2rem;
+  color: #0057b3;
+  margin-bottom: 16px;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  background: #0f2b3d;
+  color: white;
+  border-radius: 48px;
+  margin: 40px 0 20px;
+  padding: 64px 24px;
+}
+.cta-section h2 {
+  color: white;
+}
+.cta-section .btn-primary {
+  background-color: #ffb347;
+  color: #1e2a3e;
+  box-shadow: none;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 40px 0 32px;
+  color: #5b6f82;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid #eef2f6;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .kit-wrapper {
+    padding: 28px;
+  }
+}

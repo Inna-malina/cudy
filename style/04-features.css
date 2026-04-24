@@ -1,0 +1,46 @@
+#features {
+  background: #e893440f;
+}
+
+.features-flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 280px;
+  background: #f9fbfd;
+  padding: 28px 24px;
+  border-radius: 28px;
+  transition: 0.2s;
+  background: url("/images/features-card.jpg");
+  background-size: cover;
+}
+
+.feature-icon {
+  position: absolute;
+  transform: rotate(332deg);
+  right: -19px;
+  bottom: -36px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.feature-card p {
+  color: #fff;
+}
+
+.fa-plug::before,
+.fa-mobile-alt::before,
+.fa-brain::before,
+.fa-hdd::before {
+  font-size: 215px;
+  color: #ffffff30;
+}

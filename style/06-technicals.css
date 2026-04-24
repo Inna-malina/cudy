@@ -1,0 +1,51 @@
+/* Сравнение спецификаций */
+#technicals {
+  position: relative;
+  background: url(/images/hero-banner-2.jpg);
+  background-size: cover;
+  /* Убираем opacity: 0.3; - он не нужен */
+}
+
+#technicals h2 {
+  color: #cf3a01;
+}
+
+/* Создаем полупрозрачный слой поверх фона, но под текстом */
+#technicals::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6); /* Затемнение фона на 30% */
+  z-index: 1;
+}
+
+/* Весь контент внутри блока должен быть выше псевдоэлемента */
+#technicals * {
+  position: relative;
+  z-index: 2;
+}
+
+.technicals-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.technicals-table th,
+.technicals-table td {
+  padding: 18px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e9edf2;
+}
+
+.technicals-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  width: 35%;
+}

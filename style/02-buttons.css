@@ -1,0 +1,36 @@
+/* Кнопки */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0f2b3d;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #367b7a;
+  box-shadow: 0 4px 8px #367b7a66;
+}
+
+.btn-primary:hover {
+  background-color: #2d6c6b;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+  border: 2px solid #367b7a;
+}
